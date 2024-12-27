@@ -17,7 +17,9 @@ public interface AluguelMapper {
 
     @Mapping(target = "modeloCarro", source = "carro.modelo")
     @Mapping(target = "nomeCliente", source = "cliente.nome")
+    @Mapping(target = "telefoneCliente", source = "cliente.telefone")
     @Mapping(target = "statusPagamento", source = "pago", qualifiedByName = "mapStatusPagamento")
+    @Mapping(target = "km", source = "carro.km")
     AluguelDTO toDTO(Aluguel aluguel);
 
     @Named("mapStatusPagamento")

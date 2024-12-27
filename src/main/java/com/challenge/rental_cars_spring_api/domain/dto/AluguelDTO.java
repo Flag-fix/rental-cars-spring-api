@@ -10,7 +10,9 @@ public record AluguelDTO(
         Long id,
         String modeloCarro,
         String nomeCliente,
+        String telefoneCliente,
         LocalDate dataAluguel,
+        BigDecimal km,
         LocalDate dataDevolucao,
         BigDecimal valor,
         EStatusPagamento statusPagamento
